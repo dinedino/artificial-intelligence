@@ -1,0 +1,19 @@
+def solutions():
+    # letters = ('t', 'w', 'o', 'f', 'u', 'r')
+    all_solutions = list()
+    for t in range(9, -1, -1):
+        for w in range(9, -1, -1):
+            for o in range(9, -1, -1):
+                for f in range(9, -1, -1):
+                    for u in range(9, -1, -1):
+                        for r in range(9, -1, -1):
+                            if len(set([t, w, o,f,u,r])) == 10:
+                                    two = 100 * t + 10 * w + o 
+                                    two = 100 * t + 10 * w + o 
+                                    four = 1000 * f + 100 * o + 10 * u + r
+
+                                    if two + two == four:
+                                        all_solutions.append((two, two, four))
+    return all_solutions
+
+print(solutions())
